@@ -4,9 +4,8 @@ Cybersecurity lab setup: Kali Linux on VirtualBox with a private NAT Network, st
 
 **An isolated virtual lab for ethical hacking and penetration-testing practice, built with VirtualBox and Kali Linux.**
 
-![Skill]
-![VirtualBox](https://img.shields.io/badge/VirtualBox-[VERSION]-0070C0?style=flat-square)
-![Kali](https://img.shields.io/badge/Kali%20Linux-[VERSION]-E87500?style=flat-square&logo=kalilinux&logoColor=white)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-7.2.22-0070C0?style=flat-square)
+![Kali](https://img.shields.io/badge/Kali%20Linux-2026.3-E87500?style=flat-square&logo=kalilinux&logoColor=white)
 ![Network](https://img.shields.io/badge/Network-NAT%20Network-238F89?style=flat-square)
 ![Ethical Hacking](https://img.shields.io/badge/Ethical%20Hacking-C00000?style=flat-square)
 
@@ -95,7 +94,7 @@ The lab is a safe, repeatable environment for activities such as:
 ## 🪜 Setup Procedure
 
 ### Step 1. Check that virtualization is enabled
-Before installing anything, I confirmed that hardware virtualization (Intel VT-x / AMD-V) is enabled. On Windows this can be checked in **Task Manager → Performance → CPU → Virtualization: Enabled**.
+Before installing anything, I confirmed that hardware virtualization (Intel VT-x/AMD-V) is enabled. On Windows, this can be checked in **Task Manager → Performance → CPU → Virtualization: Enabled**.
 
 ### Step 2. Install 7-Zip
 Kali's pre-built VM is often distributed as a `.7z` archive, so I installed 7-Zip to extract it.
@@ -103,7 +102,7 @@ Kali's pre-built VM is often distributed as a `.7z` archive, so I installed 7-Zi
 ### Step 3. Install VirtualBox
 I downloaded VirtualBox from the official site and installed it with the default options.
 
-![VirtualBox installed](screenshots/2-virtualbox-installed.png)
+![VirtualBox installed](https://github.com/As-Sulamy/NETWORKWALKS-SULAIMAN-B084-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Kali%20Machine.png)
 
 ### Step 4. Create the NAT Network
 In VirtualBox: **Tools → Network → NAT Networks → Create**.
@@ -117,7 +116,7 @@ IPv6:          Disabled
 
 I chose a **NAT Network** rather than plain NAT because VMs on the same NAT Network can communicate with each other *and* still reach the internet for updates. Plain NAT isolates each VM from the others.
 
-![NAT Network settings](screenshots/3-nat-network-settings.png)
+![NAT Network settings](https://github.com/As-Sulamy/NETWORKWALKS-SULAIMAN-B084-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Nat%20setup.png)
 
 ### Step 5. Import Kali Linux
 I downloaded the pre-built Kali VirtualBox image from the official Kali website, extracted it, and imported it (**File → Import Appliance**, or **Machine → Add** for a `.vbox` file).
@@ -131,16 +130,16 @@ Adapter 1:      Attached to NAT Network
 Network name:   [NatNetwork]
 ```
 
-![Kali VM settings](screenshots/4-kali-vm-settings.png)
+![Kali VM settings](https://github.com/As-Sulamy/NETWORKWALKS-SULAIMAN-B084-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Kali%20Machine.png)
 
 ### Step 6. Boot Kali and update it
-I started the VM and logged in with the default credentials from the Kali documentation, then changed the default password right away.
+I started the VM, logged in with the default credentials from the Kali documentation, and changed the default password right away.
 
 ```bash
 sudo apt update && sudo apt full-upgrade -y
 ```
 
-![Kali desktop](screenshots/5-kali-desktop.png)
+![Kali desktop](https://github.com/As-Sulamy/NETWORKWALKS-SULAIMAN-B084-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Kali%20Testig.png)
 
 ### Step 7. Configure a static IP address
 I assigned Kali a fixed address so it is easy to reference in future labs.
@@ -152,7 +151,7 @@ Gateway:      10.0.0.1
 DNS:          8.8.8.8
 ```
 
-![Kali network settings](screenshots/6-kali-network-settings.png)
+![Kali network settings](https://github.com/As-Sulamy/NETWORKWALKS-SULAIMAN-B084-WK1-PM1-CYBERSECURITY-LAB-SETUP/blob/main/Kali%20Machine.png)
 
 ### Step 8. Take a clean snapshot
 Once everything worked, I created a VirtualBox snapshot named:
@@ -230,10 +229,10 @@ This lab is for education and authorized testing only. I will not use these tool
 
 ## 👤 Author
 
-**Sulaiman Ismail bello**
+**Sulaiman Ismail Bello**
 Cybersecurity Analyst Intern, NETWORKWALKS 
 
-LinkedIn: 
+LinkedIn: https://lnkd.in/p/d_xcwcfC
 
 ---
 
